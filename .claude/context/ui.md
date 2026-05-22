@@ -1,9 +1,5 @@
 # UI Conventions
 
-<!-- Load only for UI or component tasks.
-     FORMAT: Bullet points only. No prose. Delete unused sections.
-     Filled by /init or /scan. -->
-
 ## Component Rules
 - Prefer Mantine primitives for inputs, modals, menus, tables, notifications
 - Use plain HTML + Tailwind for layout and bespoke UI

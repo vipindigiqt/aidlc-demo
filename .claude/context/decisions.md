@@ -1,8 +1,6 @@
 # Decisions
 
-<!-- FORMAT: Append-only. Never edit or delete existing rows.
-     /scan backfills inferred decisions with [inferred] marker.
-     Template: YYYY-MM-DD | Decision | Reason | [inferred] (if auto-detected) -->
+Append-only. Never edit/delete existing rows. `/scan` adds inferred entries with `[inferred]` marker.
 
 | Date | Decision | Reason |
 |------|----------|--------|

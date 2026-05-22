@@ -1,27 +1,23 @@
+---
+name: check
+description: /check — Validate Context Files
+---
+
 # /check — Validate Context Files
 
-## What This Command Does
-Checks that all context files exist and contain no empty or `UNKNOWN` fields.
-Outputs a pass/fail for each file.
-Blocks all tasks if any file fails.
-
----
+Verify every context file exists + no empty/`UNKNOWN` fields. Pass/fail per file. Block tasks if any fail.
 
 ## Checks
-
 | File | Pass condition |
 |------|---------------|
-| `stack.md` | Exists. No empty fields in populated sections. No `UNKNOWN` values. |
-| `structure.md` | Exists. Root layout is not empty. |
-| `patterns.md` | Exists. At least one pattern entry exists. |
-| `decisions.md` | Exists. At least one row in the table. |
-| `ui.md` | Exists. Component rules and naming fields are filled. |
-| `api.md` | Exists. Conventions section is filled (routes table may be empty on new projects). |
+| `stack.md` | Exists. No empty fields in populated sections. No `UNKNOWN`. |
+| `structure.md` | Exists. Root layout non-empty. |
+| `patterns.md` | Exists. ≥1 pattern entry. |
+| `decisions.md` | Exists. ≥1 row. |
+| `ui.md` | Exists. Component rules + naming filled. |
+| `api.md` | Exists. Conventions filled (routes table may be empty on new projects). |
 
----
-
-## Output Format
-
+## Output
 ```
 /check results:
 ✓ stack.md
@@ -34,9 +30,7 @@ Blocks all tasks if any file fails.
 2 file(s) need attention. Resolve before proceeding.
 ```
 
----
-
 ## Rules
-- If all files pass → confirm and allow tasks to proceed
-- If any file fails → list failed files, explain what is missing, block tasks until resolved
-- Do not attempt to auto-fix failed files — ask user to run `/init`, `/scan`, or fill in manually
+- All pass → confirm, allow tasks
+- Any fail → list failed + missing pieces, block tasks
+- Never auto-fix — ask user to run `/init`, `/scan`, or fill manually

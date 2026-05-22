@@ -1,8 +1,5 @@
 # Structure
 
-<!-- FORMAT: Document non-obvious conventions only. Skip anything self-explanatory.
-     Filled by /init or /scan. /scan must not dump standard boilerplate here. -->
-
 ## Folder Convention
 Module-based. Each module owns everything related to it.
 

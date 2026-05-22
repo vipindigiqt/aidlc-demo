@@ -1,9 +1,5 @@
 # Patterns
 
-<!-- FORMAT: One line per pattern. No prose. Point to a file for examples, don't inline code.
-     Template: "- Topic: approach — see path/to/example.ts"
-     Mark stale patterns [deprecated YYYY-MM-DD]. /scan removes deprecated entries on next run. -->
-
 ## Routing
 - File-based routes in `src/routes/` via `@tanstack/router-plugin` — see src/routes/index.tsx
 - Root layout uses `createRootRoute` with `<Outlet />` — see src/routes/__root.tsx
