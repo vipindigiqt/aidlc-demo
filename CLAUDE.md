@@ -20,7 +20,7 @@ Inline summary so no reload needed:
 | `/init` | `.claude/commands/init.md` | Scaffold new greenfield project |
 | `/scan` | `.claude/commands/scan.md` | Detect + document existing project |
 | `/check` | `.claude/commands/check.md` | Validate context files populated |
-| `/reset` | `.claude/commands/reset.md` | Clear working memory, re-read core context |
+| `/reset` | `.claude/commands/reset.md` | Wipe project context files to empty templates (fresh-start) |
 | `/task` | `.claude/commands/task.md` | Start task with clarifying questions |
 
 Every conversation starts with `/check`. If fails → run `/init` or `/scan`.
