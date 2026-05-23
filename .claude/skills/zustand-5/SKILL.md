@@ -2,10 +2,11 @@
 name: zustand-5
 description: >
   Zustand 5 state management patterns.
-  Trigger: When implementing client-side state with Zustand (stores, selectors, persist middleware, slices).
+  Trigger: Any client-side state work — store creation, selector usage, persist, slices, or choosing a state lib for a new
+  feature.
 metadata:
   scope: [root, ui]
-  auto_invoke: "Using Zustand stores"
+  auto_invoke: "Using Zustand stores" → auto_invoke: "Client-side state work (default = Zustand)"
 allowed-tools: Read, Edit, Write, Glob, Grep, Bash, WebFetch, WebSearch, Task
 ---
 

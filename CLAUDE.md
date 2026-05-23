@@ -14,6 +14,15 @@ Inline summary so no reload needed:
 
 **Disable** — only when user says `stop caveman` or `normal mode`.
 
+## Defaults — Use Without Asking
+| Concern | Lib |
+|---------|-----|
+| Global client state | zustand (selectors required, `useShallow` multi-field, never bare `useStore()`) |
+| Forms | mantine-form |
+| Validation | zod |
+| Styling | tailwind |
+| HTTP server | express or hono (per task) |
+
 ## Commands
 | Command | File | Purpose |
 |---------|------|---------|

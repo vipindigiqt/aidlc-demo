@@ -4,3 +4,4 @@
      Filled by /init or /scan. -->
 
 ## Core
+- State (client): zustand

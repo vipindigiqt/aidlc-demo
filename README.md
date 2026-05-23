@@ -27,6 +27,7 @@ Flow per session:
 
 Always loaded. Defines:
 - **Response style** — caveman mode ON by default (terse, fragments, no filler). Disable: `stop caveman` / `normal mode`.
+- **Defaults table** — concern → lib map. Listed libs are used without asking (state → zustand, forms → mantine-form, validation → zod, styling → tailwind, HTTP → express/hono).
 - **Commands table** — which slash-commands exist.
 - **Context files load-on-demand table** — when each `.claude/context/*.md` gets pulled in.
 - **Major Decisions list** — triggers that force Claude to ask before coding (new lib, schema change, >3 modules, etc.).
@@ -44,7 +45,7 @@ Project memory. Append-only for some. Claude loads only what current task needs.
 |------|---------|-------------|
 | `stack.md` | Languages, frameworks, libs, versions, tooling | Every task |
 | `structure.md` | Folder layout + conventions | Creating/moving files |
-| `patterns.md` | How code is written here (routing, styling, components, ...) | Writing any code |
+| `patterns.md` | How code is written here (routing, styling, components, **state**, ...) | Writing any code |
 | `decisions.md` | Append-only log: date / decision / reason | Major decision needed |
 | `ui.md` | Component rules, styling rules, naming | UI work |
 | `api.md` | Conventions + append-only routes table | Backend work |
@@ -88,8 +89,10 @@ Auto-triggered expertise bundles. Claude picks them based on file type / keyword
 | `typescript` | `.ts`/`.tsx` work — strict types, generics, no `any` |
 | `tailwind-4` | Tailwind className / variants / cn() |
 | `zod-4` | Zod schemas (v3→v4 migration covered) |
-| `zustand-5` | Zustand stores, selectors, persist |
+| `zustand-5` | Any client-side state work — stores, selectors, persist, slices. Default global state lib |
 | `mantine-form` | `@mantine/form` — useForm, validation, field arrays |
+| `express-typescript` | Express.js + TS — middleware, routing, security |
+| `hono` | Hono apps — routing, middleware, JSX, validation, streaming. Imports `hono`/`hono/*` |
 
 Each skill has its own `SKILL.md` with rules. Read directly if curious.
 
